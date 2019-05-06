@@ -6,28 +6,30 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Un titre ici !</title>
-		<SCRIPT LINK="examenfinal.js"></SCRIPT>
+		<SCRIPT src="examenfinal.js"></SCRIPT>
 	</head>
 
 	<!-- UN COMMENTAIRE -->
 	<BODY>
 		<div id="global">
 		<h3>Cochez les sports que vous pratiquerez cet été</h3>
-		<form name="formulaire" onload="exec()";>
+		<form name="formulaire" onsubmit="exec()";>
 			Aye, sélectionne au maximum <strong>2</strong> case à cocher
-		<P/>
-		<br><input name="Checkbox1" type="checkbox"> 
-		Skateboard&nbsp;
+		<P>
+		<br><input name="Checkbox1" type="checkbox"> Skateboard&nbsp;
 		<img alt="" height="26" src="images/skateboard.png" width="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<input name="Checkbox2" type="checkbox"> Ski nautique
 			<img alt="" height="24" src="images/skinautique.jpg" width="36"><br>
 			<input name="Checkbox3" type="checkbox"> Pêche
-			<img alt="" height="33" scr="images/barque-de-pecheur-.jpg" width="38" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="images/barque.jpg" alt="" height="33" width="38" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<input name="Checkbox4" type="checkbox"> Vélo
 			<img alt="" height="23" src="images/velo.jpg" width="37"><br>
 			<br><br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input name="Submit1" type="submit" value="submit"><br></div>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+			<input name="Submit1" type="submit" value="submit"action="exec()"><br></div>
 		</form>
-	</P></form></div>
+	</P>
+</form>
+</div>
 	</BODY>
 </html>

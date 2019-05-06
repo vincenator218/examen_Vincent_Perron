@@ -11,13 +11,13 @@ document.write("La journée de la fin de la session est le: " + anni + ".</P>");
 document.write("<B>Alors, il ne reste plus que " + intervalle + " jours avant la fin de l'année scolaire!</B>");
 exec()
 {
-var;
+var cumul = 0;
 	if (document.formulaire.Checkbox1.checked) ++cumul;
 	if (document.formulaire.Checkbox2.checked) ++cumul;
 	if (document.formulaire.Checkbox3.checked) ++cumul;
 	if (document.formulaire.Checkbox4.checked) ++cumul;
 //
-    if ( cumul == 0)
+    if ( cumul === 0)
     {
     	alert("Vous avez sélectionné aucune activité !!!");
 		document.formulaire.Checkbox1.unchecked();
@@ -28,7 +28,7 @@ var;
 //		
 	if ( cumul > 2)
 	{
-		alert("Vous ne pouvez choisir plus que 2 activités !!!)
+		alert("Vous ne pouvez choisir plus que 2 activités !!!")
 		document.formulaire.Checkbox1.unchecked();
 		document.formulaire.Checkbox2.unchecked();
 		document.formulaire.Checkbox3.unchecked();
